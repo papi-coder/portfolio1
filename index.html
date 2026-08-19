@@ -141,6 +141,25 @@ section{position:relative;overflow:hidden}
 .pcbtn:hover{background:var(--gl)}
 .pcbtn svg{width:13px;height:13px;fill:none;stroke:var(--ink);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
 
+/* FEATURED PROJECT */
+.pc-featured{grid-column:1/-1}
+.pc-featured .pcimg{height:300px}
+.pc-featured .pcbody{padding:32px 36px 36px;flex-direction:row;flex-wrap:wrap;gap:20px;align-items:flex-start}
+.pc-featured .pcnum{font-size:5rem;line-height:.85;min-width:100px}
+.pc-featured .pcname{font-size:2.2rem;flex:1;min-width:200px}
+.pc-featured .pcdesc{font-size:1rem;flex:1;min-width:280px;margin-bottom:0}
+.pc-featured .pctags{margin-bottom:0;align-items:center}
+.pc-featured .pclive{border-color:rgba(201,168,76,.6);color:var(--gl);font-size:.55rem;padding:5px 12px}
+.pc-featured .pcbtn{padding:13px 24px;font-size:.6rem}
+.pc-featured .pcgrad{background:linear-gradient(to bottom,transparent 30%,var(--ch) 100%)}
+.pc-featured:hover{border-color:rgba(201,168,76,.55);box-shadow:0 50px 100px rgba(0,0,0,.6),0 0 80px rgba(201,168,76,.12)}
+@media(max-width:768px){
+  .pc-featured .pcbody{flex-direction:column;padding:24px}
+  .pc-featured .pcimg{height:220px}
+  .pc-featured .pcnum{font-size:3.5rem}
+  .pc-featured .pcname{font-size:1.6rem}
+}
+
 /* DESIGN */
 #design{background:var(--ch);padding:100px 80px}
 .dgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:48px}
@@ -209,7 +228,7 @@ footer p{font-family:"Space Mono",monospace;font-size:.52rem;letter-spacing:.18e
 <body>fix a
 <div id="lb">
   <button id="lbx" type="button" onclick="lbClose()">&times; CLOSE</button>
-  <img id="lbimg" src="" alt="">
+  <img id="lbimg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
 </div>
 <div id="cur"></div>
 <div id="ring"></div>
@@ -248,7 +267,7 @@ footer p{font-family:"Space Mono",monospace;font-size:.52rem;letter-spacing:.18e
   <div class="hero-right" data-parallax="0.2">
     <div class="hbigtext">SOLOMON</div>
     <div class="hstats">
-      <div class="stat"><div class="statn" data-count="4">0</div><div class="statl">Live Projects</div></div>
+      <div class="stat"><div class="statn" data-count="5">0</div><div class="statl">Live Projects</div></div>
       <div class="stat"><div class="statn" data-count="2">0</div><div class="statl">Certifications</div></div>
       <div class="stat"><div class="statn">&#8734;</div><div class="statl">Curiosity</div></div>
       <div class="stat"><div class="statn">GH</div><div class="statl">Based in Ghana</div></div>
@@ -281,6 +300,22 @@ footer p{font-family:"Space Mono",monospace;font-size:.52rem;letter-spacing:.18e
     <h2 class="stit">Live <span class="gold-text">Projects</span></h2>
   </div>
   <div class="pgrid">
+    <a class="pc pc-featured rev" aria-label="Open best project" href="https://campusiqkstu.vercel.app/" target="_blank" rel="noopener">
+      <div class="pcimg"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20800%20440%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230a0f1a%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2311182e%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%22800%22%20height%3D%22440%22%20fill%3D%22url%28%23bg%29%22/%3E%3Crect%20x%3D%22100%22%20y%3D%2260%22%20width%3D%22600%22%20height%3D%22320%22%20rx%3D%2212%22%20fill%3D%22%230d1525%22%20stroke%3D%22%23c9a84c%22%20stroke-width%3D%221.5%22/%3E%3Crect%20x%3D%22100%22%20y%3D%2260%22%20width%3D%22600%22%20height%3D%2248%22%20rx%3D%2212%22%20fill%3D%22%23162040%22/%3E%3Ccircle%20cx%3D%22124%22%20cy%3D%2284%22%20r%3D%228%22%20fill%3D%22%23e05555%22/%3E%3Ccircle%20cx%3D%22144%22%20cy%3D%2284%22%20r%3D%228%22%20fill%3D%22%23e0a035%22/%3E%3Ccircle%20cx%3D%22164%22%20cy%3D%2284%22%20r%3D%228%22%20fill%3D%22%2335c455%22/%3E%3Ctext%20x%3D%22400%22%20y%3D%2295%22%20font-family%3D%22monospace%22%20font-size%3D%2212%22%20fill%3D%22%23c9a84c%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%223%22%3ECAMPUS%20IQ%3C/text%3E%3Crect%20x%3D%22140%22%20y%3D%22130%22%20width%3D%22200%22%20height%3D%22110%22%20rx%3D%228%22%20fill%3D%22%23111830%22%20stroke%3D%22%23c9a84c%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%22240%22%20y%3D%22178%22%20font-family%3D%22Arial%22%20font-size%3D%2228%22%20fill%3D%22%23c9a84c%22%20text-anchor%3D%22middle%22%20font-weight%3D%22bold%22%3E2.4K%3C/text%3E%3Ctext%20x%3D%22240%22%20y%3D%22198%22%20font-family%3D%22monospace%22%20font-size%3D%229%22%20fill%3D%22%23889aaa%22%20text-anchor%3D%22middle%22%3EStudents%3C/text%3E%3Crect%20x%3D%22360%22%20y%3D%22130%22%20width%3D%22200%22%20height%3D%22110%22%20rx%3D%228%22%20fill%3D%22%23111830%22%20stroke%3D%22%23c9a84c%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%22460%22%20y%3D%22178%22%20font-family%3D%22Arial%22%20font-size%3D%2228%22%20fill%3D%22%23c9a84c%22%20text-anchor%3D%22middle%22%20font-weight%3D%22bold%22%3E98%25%3C/text%3E%3Ctext%20x%3D%22460%22%20y%3D%22198%22%20font-family%3D%22monospace%22%20font-size%3D%229%22%20fill%3D%22%23889aaa%22%20text-anchor%3D%22middle%22%3EEngagement%3C/text%3E%3Crect%20x%3D%22580%22%20y%3D%22130%22%20width%3D%2280%22%20height%3D%22110%22%20rx%3D%228%22%20fill%3D%22%23111830%22%20stroke%3D%22%23c9a84c%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%22620%22%20y%3D%22178%22%20font-family%3D%22Arial%22%20font-size%3D%2228%22%20fill%3D%22%23c9a84c%22%20text-anchor%3D%22middle%22%20font-weight%3D%22bold%22%3EA%2B%3C/text%3E%3Ctext%20x%3D%22620%22%20y%3D%22198%22%20font-family%3D%22monospace%22%20font-size%3D%229%22%20fill%3D%22%23889aaa%22%20text-anchor%3D%22middle%22%3EGrade%3C/text%3E%3Crect%20x%3D%22140%22%20y%3D%22260%22%20width%3D%22520%22%20height%3D%22100%22%20rx%3D%228%22%20fill%3D%22%23111830%22%20stroke%3D%22%23c9a84c%22%20stroke-width%3D%221%22/%3E%3Crect%20x%3D%22160%22%20y%3D%22280%22%20width%3D%22100%22%20height%3D%226%22%20rx%3D%223%22%20fill%3D%22%23c9a84c%22%22/%3E%3Crect%20x%3D%22160%22%20y%3D%22300%22%20width%3D%22180%22%20height%3D%226%22%20rx%3D%223%22%20fill%3D%22%23335588%22%20opacity%3D%220.6%22/%3E%3Crect%20x%3D%22160%22%20y%3D%22320%22%20width%3D%22140%22%20height%3D%226%22%20rx%3D%223%22%20fill%3D%22%23335588%22%20opacity%3D%220.4%22/%3E%3Crect%20x%3D%22360%22%20y%3D%22280%22%20width%3D%22100%22%20height%3D%226%22%20rx%3D%223%22%20fill%3D%22%23c9a84c%22%22/%3E%3Crect%20x%3D%22360%22%20y%3D%22300%22%20width%3D%22200%22%20height%3D%226%22%20rx%3D%223%22%20fill%3D%22%23335588%22%20opacity%3D%220.6%22/%3E%3Crect%20x%3D%22360%22%20y%3D%22320%22%20width%3D%22160%22%20height%3D%226%22%20rx%3D%223%22%20fill%3D%22%23335588%22%20opacity%3D%220.4%22/%3E%3Cpolygon%20points%3D%22400%2C60%20460%2C40%20460%2C60%22%20fill%3D%22%23c9a84c%22%20opacity%3D%220.3%22/%3E%3C/svg%3E" alt="Campus IQ Project Preview"></div>
+        <div class="pcgrad"></div>
+        <div class="pclive"><span class="livdot"></span>Best Project</div>
+      </div>
+      <div class="pcbody">
+        <div class="pcnum">00</div>
+        <h3 class="pcname">CAMPUS IQ</h3>
+        <p class="pcdesc">An intelligent campus management platform connecting students, faculty and administration. The most polished and ambitious project in my portfolio — featuring real-time analytics, seamless UX, and robust architecture.</p>
+        <div class="pctags"><span class="tag">Education</span><span class="tag">Web Platform</span><span class="tag">Vercel</span><span class="tag">Featured</span></div>
+        <span class="pcbtn">
+          View Best Project
+          <svg viewBox="0 0 24 24"><polyline points="7,17 17,7"/><polyline points="7,7 17,7 17,17"/></svg>
+        </span>
+      </div>
+    </a>
     <a class="pc rev" aria-label="Open project details" href="https://ascendschoolhub.netlify.app/" target="_blank" rel="noopener">
       <div class="pcimg"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20800%20440%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22ag%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23080814%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230a1a38%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%22800%22%20height%3D%22440%22%20fill%3D%22url%28%23ag%29%22/%3E%3Crect%20x%3D%22140%22%20y%3D%2290%22%20width%3D%22520%22%20height%3D%22300%22%20rx%3D%2210%22%20fill%3D%22%230a1020%22%20stroke%3D%22%232e5cbf%22%20stroke-width%3D%221.5%22/%3E%3Crect%20x%3D%22140%22%20y%3D%2290%22%20width%3D%22520%22%20height%3D%2238%22%20rx%3D%2210%22%20fill%3D%22%23162060%22/%3E%3Ccircle%20cx%3D%22165%22%20cy%3D%22109%22%20r%3D%227%22%20fill%3D%22%23e05555%22/%3E%3Ccircle%20cx%3D%22187%22%20cy%3D%22109%22%20r%3D%227%22%20fill%3D%22%23e0a035%22/%3E%3Ccircle%20cx%3D%22209%22%20cy%3D%22109%22%20r%3D%227%22%20fill%3D%22%2335c455%22/%3E%3Crect%20x%3D%22160%22%20y%3D%22150%22%20width%3D%22160%22%20height%3D%2212%22%20rx%3D%226%22%20fill%3D%22%231a3480%22%20opacity%3D%220.8%22/%3E%3Crect%20x%3D%22160%22%20y%3D%22174%22%20width%3D%22110%22%20height%3D%229%22%20rx%3D%224%22%20fill%3D%22%231a3480%22%20opacity%3D%220.5%22/%3E%3Crect%20x%3D%22340%22%20y%3D%22150%22%20width%3D%22180%22%20height%3D%22115%22%20rx%3D%226%22%20fill%3D%22%230f1e45%22%20stroke%3D%22%232e5cbf%22%20stroke-width%3D%221%22/%3E%3Crect%20x%3D%22356%22%20y%3D%22166%22%20width%3D%22148%22%20height%3D%229%22%20rx%3D%224%22%20fill%3D%22%232e5cbf%22%20opacity%3D%220.7%22/%3E%3Crect%20x%3D%22356%22%20y%3D%22184%22%20width%3D%22100%22%20height%3D%228%22%20rx%3D%224%22%20fill%3D%22%232e5cbf%22%20opacity%3D%220.4%22/%3E%3Crect%20x%3D%22356%22%20y%3D%22202%22%20width%3D%22125%22%20height%3D%228%22%20rx%3D%224%22%20fill%3D%22%232e5cbf%22%20opacity%3D%220.3%22/%3E<rect x="160" y="280%22%20width%3D%22360%22%20height%3D%2280%22%20rx%3D%226%22%20fill%3D%22%230f1e45%22%20stroke%3D%22%232e5cbf%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%22340%22%20y%3D%22325%22%20font-family%3D%22Arial%22%20font-size%3D%2211%22%20fill%3D%22%235b8dd9%22%20text-anchor%3D%22middle%22%3ECourse%20Progress%20Tracker%3C/text%3E%3Ctext%20x%3D%22400%22%20y%3D%22415%22%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20fill%3D%22%235b8dd9%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%224%22%3EASCEND%20SCHOOL%20HUB%3C/text%3E%3C/svg%3E" alt="ASCEND SCHOOL HUB">
         <div class="pcgrad"></div>
@@ -347,6 +382,7 @@ footer p{font-family:"Space Mono",monospace;font-size:.52rem;letter-spacing:.18e
           <svg viewBox="0 0 24 24"><polyline points="7,17 17,7"/><polyline points="7,7 17,7 17,17"/></svg>
         </span>
       </div>
+    </div>
     </a>
   </div>
 </section>
